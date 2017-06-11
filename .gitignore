@@ -4,13 +4,13 @@
 *.jar
 *.war
 /webcars-back/target/*
+/webcars-back/.settings/*
 logs/
 /webcars-front/node_modules
-/webcars-front/app/bower_componentes
+/webcars-front/app/bower_components
 tmp
 *.DS_Store
 .idea
-*.
 
 *.bowerrc
 *.jshintrc
