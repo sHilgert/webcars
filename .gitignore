@@ -1,0 +1,11 @@
+*.class
+*.classpath
+*.project
+/webcars-back/target
+logs/*
+!.gitkeep
+/webcars-front/node_modules
+/webcars-front/app/bower_componentes/
+tmp
+.DS_Store
+.idea
