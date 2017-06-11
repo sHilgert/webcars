@@ -1,0 +1,17 @@
+br/gov/sp/fatec/model/Carro.class
+br/gov/sp/fatec/security/RestAuthenticationEntryPoint.class
+br/gov/sp/fatec/service/SegurancaServiceImpl.class
+br/gov/sp/fatec/repository/CarroRepository.class
+br/gov/sp/fatec/service/AutorizacaoServiceImpl.class
+br/gov/sp/fatec/web/controller/LoginController.class
+br/gov/sp/fatec/model/Autorizacao.class
+br/gov/sp/fatec/service/AutorizacaoService.class
+br/gov/sp/fatec/web/controller/AutorizacaoController.class
+br/gov/sp/fatec/model/Usuario.class
+br/gov/sp/fatec/security/Login.class
+br/gov/sp/fatec/web/controller/CarController.class
+br/gov/sp/fatec/repository/AutorizacaoRepository.class
+br/gov/sp/fatec/service/CarroService.class
+br/gov/sp/fatec/repository/UsuarioRepository.class
+br/gov/sp/fatec/security/JwtAuthenticationFilter.class
+br/gov/sp/fatec/security/JwtUtils.class
