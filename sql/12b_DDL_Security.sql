@@ -1,7 +1,7 @@
 --- DML
 
 create table car_carro(
-  car_id numeric(9) primary key AUTO_INCREMENT,
+  car_id BIGINT UNSIGNED primary key AUTO_INCREMENT,
   car_marca varchar(20),
   car_placa varchar (20),
   car_modelo varchar(20)

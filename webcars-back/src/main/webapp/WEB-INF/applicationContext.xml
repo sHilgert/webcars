@@ -17,6 +17,8 @@
     <jpa:repositories base-package="br.gov.sp.fatec.repository"/>
     
     <mvc:annotation-driven />
+    
+    
 
     <!-- Datasource -->
     <bean id="dataSource" 

@@ -25,6 +25,19 @@ public class CarroService {
 		return carros;
 	}
 	
+	public boolean salvar(String placa, String marca, String modelo){
+		Carro carro = new Carro();
+		carro.setMarca(marca);
+		carro.setModelo(modelo);
+		carro.setPlaca(placa);		
+		try {
+			carroRepository.save(carro);
+		} catch (Exception e) {
+			return false;
+		}
+		return true;
+	}
+	
 	public Carro getCarById(Long id){
 		return carroRepository.findOne(id);
 	}
