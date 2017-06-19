@@ -106,7 +106,7 @@ angular.module('WebCarsFront.controllers', []).
           //loginService.isLogged = true;
           //loginService.token = headers('token');
           //loginService.auth = data.autorizacoes;
-          $state.go('home');
+          $state.go('cars');
           console.log("carro cadastrado com sucesso");
           //console.log(headers('token'));
           //console.log(config);
