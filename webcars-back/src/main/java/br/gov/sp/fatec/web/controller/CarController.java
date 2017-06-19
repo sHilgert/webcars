@@ -1,6 +1,5 @@
 package br.gov.sp.fatec.web.controller;
 
-import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -10,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,10 +18,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.gov.sp.fatec.model.Carro;
-import br.gov.sp.fatec.model.Usuario;
 import br.gov.sp.fatec.service.CarroService;
 import br.gov.sp.fatec.web.request.CarroRequest;
 
+@CrossOrigin
 @RestController
 public class CarController {
 

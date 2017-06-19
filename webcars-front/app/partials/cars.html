@@ -1,0 +1,16 @@
+<h1 align = "center">Lista de Carros</h1>
+<div class = "col-md-12" align = "center">
+  <ul class = "listing">
+      <li ng-repeat="car in cars">
+        <div class = "row">
+          <div class = "well col-md-4 col-md-offset-4">
+            <ul>
+              <li><b>Placa:</b> {{car.placa}}</li>
+              <li><b>Modelo:</b> {{car.modelo}}</li>
+              <li><b>Marca:</b> {{car.marca}}</li>
+            </ul>
+          </div>
+        </div>
+      </li>  
+  </ul>
+</div>

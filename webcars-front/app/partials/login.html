@@ -1,0 +1,18 @@
+<div class = "row">
+  <div class = "col-md-12" align = "center">
+  <h1>Login</h1>
+    <form>
+      <div class = "input-group col-md-3">
+        <span class = "input-group-addon"><span class = "glyphicon glyphicon-user"></span></span>
+        <input type = "text" class = "form-control" ng-model = "dashboard.user.username" placeholder="Username" aria-describedby="basic-addon1">
+      </div>
+      
+      <div class="input-group col-md-3">
+        <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+        <input type="password" class="form-control" ng-model="dashboard.user.password" placeholder="Password" aria-describedby="basic-addon1">
+      </div>
+      
+      <button class="btn btn-default" ng-click="login()">login</button>
+    </form>
+  </div>
+</div>

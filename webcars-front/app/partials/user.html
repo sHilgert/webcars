@@ -1,0 +1,16 @@
+<h1 align = "center">Lista de Usuarios</h1>
+
+<div class = "col-md-12" align = "center">
+  <ul class = "listing">
+      <li ng-repeat="user in users">
+        <div class = "row">
+          <div class = "well col-md-4 col-md-offset-4">
+            <ul>
+              <li><b>Username:</b> {{user.nome}}</li>
+              <li><button type="button" class="btn btn-danger btn-small" ng-click = "removeUser($index)">Deletar</button></li>
+            </ul>
+          </div>
+        </div>
+      </li>  
+  </ul>
+</div>

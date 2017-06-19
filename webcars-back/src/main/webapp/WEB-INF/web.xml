@@ -351,7 +351,7 @@
 	</servlet-mapping>
 
 
-	<filter>
+	<!-- <filter>
 		<filter-name>corsFilter</filter-name>
 		<filter-class>
 			br.gov.sp.fatec.config.CORSFilter
@@ -361,7 +361,7 @@
 		<filter-name>corsFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
-
+ -->
 
 	<filter>
 		<filter-name>springSecurityFilterChain</filter-name>

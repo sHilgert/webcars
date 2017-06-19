@@ -23,7 +23,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import br.gov.sp.fatec.model.Usuario;
 import br.gov.sp.fatec.security.JwtUtils;
 import br.gov.sp.fatec.security.Login;
-
+@CrossOrigin
 @RestController
 @RequestMapping(value = "/login")
 public class LoginController {
@@ -42,8 +42,9 @@ public class LoginController {
         Authentication credentials = new UsernamePasswordAuthenticationToken(login.getUsername(), login.getPassword());
         Usuario usuario = (Usuario) auth.authenticate(credentials).getPrincipal();
         usuario.setSenha(null);
-           response.setHeader("Token", JwtUtils.generateToken(usuario));
-           return usuario;
+        response.setHeader("Access-Control-Expose-Headers", "Token");
+        response.setHeader("Token", JwtUtils.generateToken(usuario));
+        return usuario;
     }
 
 }
