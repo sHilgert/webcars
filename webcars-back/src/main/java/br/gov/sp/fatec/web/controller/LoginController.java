@@ -23,6 +23,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import br.gov.sp.fatec.model.Usuario;
 import br.gov.sp.fatec.security.JwtUtils;
 import br.gov.sp.fatec.security.Login;
+
 @CrossOrigin
 @RestController
 @RequestMapping(value = "/login")

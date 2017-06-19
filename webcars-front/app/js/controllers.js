@@ -10,6 +10,7 @@ angular.module('WebCarsFront.controllers', []).
       $scope.users = data;
       console.log($scope.users);
     }).error(function(data, status, headers, config){
+      swal("Deu pau","Erro na hora de pegar os usuarios", "error");
       console.log("deu pau");
     });
 
@@ -17,8 +18,10 @@ angular.module('WebCarsFront.controllers', []).
       var deletedUser = $scope.users[index];
       console.log(deletedUser);
       userService.deleteUser(deletedUser.nome, $rootScope.token).success(function(data, status, headers, config){
+        swal("Trabalho nota 10","Usuario deletado com sucesso", "success");
         console.log("usuario deletado");
       }).error(function(data, status, headers, config){
+        swal("Deu pau","Erro na hora de deletar o usuario", "error");
         console.log("nao deletou, deu pau");
       });
       
@@ -60,6 +63,7 @@ angular.module('WebCarsFront.controllers', []).
           $rootScope.isLogged = false;
           $rootScope.token = "";
           $rootScope.isAdmin = false;
+          swal("Deu pau","Usuario não encontrado", "error");
           console.log("usuario invalido");
         });
     };
@@ -77,12 +81,14 @@ angular.module('WebCarsFront.controllers', []).
           //loginService.token = headers('token');
           //loginService.auth = data.autorizacoes;
           $state.go('login');
+          swal("Trabalho nota 10","Usuario cadastrado com sucesso", "success");
           console.log("usuario cadastrado com sucesso");
           //console.log(headers('token'));
           //console.log(config);
         })
         .error(function(data, status, headers, config) {
-          console.log("deu ruim")
+          swal("Deu pau","Username invalido", "error");
+          console.log("username invalido, deu pau")
         });
     }
   }).
@@ -108,11 +114,13 @@ angular.module('WebCarsFront.controllers', []).
           //loginService.auth = data.autorizacoes;
           $state.go('cars');
           console.log("carro cadastrado com sucesso");
+          swal("Trabalho nota 10","Carro cadastrado com sucesso", "success");
           //console.log(headers('token'));
           //console.log(config);
         })
         .error(function(data, status, headers, config) {
           $state.go('login');
+          swal("Deu pau","Usuario não logado", "error");
           console.log("usuario nao logado");
         });
     }
